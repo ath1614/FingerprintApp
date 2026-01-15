@@ -22,10 +22,14 @@ const styles = StyleSheet.create({
     padding: theme.spacing.xl,
   },
   title: {
-    ...theme.typography.title,
+    fontSize: 32,
+    fontWeight: '400',
+    color: '#202124',
     marginBottom: theme.spacing.md,
   },
   subtitle: {
-    ...theme.typography.subtitle,
+    fontSize: 16,
+    fontWeight: '400',
+    color: '#5f6368',
   },
 });

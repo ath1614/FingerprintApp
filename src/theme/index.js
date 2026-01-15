@@ -18,12 +18,10 @@ export const theme = {
     title: {
       fontSize: 32,
       fontWeight: '400',
-      color: '#202124',
     },
     subtitle: {
       fontSize: 16,
       fontWeight: '400',
-      color: '#5f6368',
     },
     button: {
       fontSize: 16,

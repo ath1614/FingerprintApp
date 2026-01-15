@@ -128,7 +128,8 @@ const styles = StyleSheet.create({
     borderRadius: 24,
   },
   buttonText: {
-    ...theme.typography.button,
+    fontSize: 16,
+    fontWeight: '500',
     color: theme.colors.background,
     textAlign: 'center',
   },

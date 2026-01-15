@@ -33,12 +33,16 @@ const styles = StyleSheet.create({
     maxWidth: 400,
   },
   title: {
-    ...theme.typography.title,
+    fontSize: 32,
+    fontWeight: '400',
+    color: '#202124',
     marginBottom: theme.spacing.sm,
     textAlign: 'center',
   },
   subtitle: {
-    ...theme.typography.subtitle,
+    fontSize: 16,
+    fontWeight: '400',
+    color: '#5f6368',
     marginBottom: theme.spacing.xl * 2,
     textAlign: 'center',
   },
@@ -56,7 +60,8 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
   buttonText: {
-    ...theme.typography.button,
+    fontSize: 16,
+    fontWeight: '500',
     color: theme.colors.background,
   },
 });
