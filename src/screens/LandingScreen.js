@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { theme } from '../theme';
 
 export default function LandingScreen({ navigation }) {
   return (
@@ -23,10 +22,10 @@ export default function LandingScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: theme.colors.background,
+    backgroundColor: '#ffffff',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: theme.spacing.xl,
+    padding: 32,
   },
   content: {
     alignItems: 'center',
@@ -36,20 +35,20 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: '400',
     color: '#202124',
-    marginBottom: theme.spacing.sm,
+    marginBottom: 8,
     textAlign: 'center',
   },
   subtitle: {
     fontSize: 16,
     fontWeight: '400',
     color: '#5f6368',
-    marginBottom: theme.spacing.xl * 2,
+    marginBottom: 64,
     textAlign: 'center',
   },
   button: {
-    backgroundColor: theme.colors.primary,
-    paddingVertical: theme.spacing.md,
-    paddingHorizontal: theme.spacing.xl,
+    backgroundColor: '#4285f4',
+    paddingVertical: 16,
+    paddingHorizontal: 32,
     borderRadius: 24,
     minWidth: 200,
     alignItems: 'center',
@@ -62,6 +61,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 16,
     fontWeight: '500',
-    color: theme.colors.background,
+    color: '#ffffff',
   },
 });

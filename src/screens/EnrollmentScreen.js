@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Image, Alert } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import { theme } from '../theme';
 
 export default function EnrollmentScreen({ navigation }) {
   const [imageUri, setImageUri] = useState(null);
@@ -67,16 +66,15 @@ export default function EnrollmentScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: theme.colors.surface,
+    backgroundColor: '#f8f9fa',
     justifyContent: 'center',
-    padding: theme.spacing.lg,
+    padding: 24,
   },
   card: {
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
     borderRadius: 16,
-    padding: theme.spacing.xl,
+    padding: 32,
     alignItems: 'center',
-    backdropFilter: 'blur(10px)',
     elevation: 4,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
@@ -85,52 +83,52 @@ const styles = StyleSheet.create({
   },
   instruction: {
     fontSize: 18,
-    color: theme.colors.text,
+    color: '#202124',
     textAlign: 'center',
-    marginBottom: theme.spacing.xl,
+    marginBottom: 32,
   },
   imageContainer: {
-    marginBottom: theme.spacing.xl,
+    marginBottom: 32,
   },
   image: {
     width: 200,
     height: 200,
     borderRadius: 100,
     borderWidth: 3,
-    borderColor: theme.colors.primary,
+    borderColor: '#4285f4',
   },
   placeholder: {
     width: 200,
     height: 200,
     borderRadius: 100,
     borderWidth: 2,
-    borderColor: theme.colors.border,
+    borderColor: '#dadce0',
     borderStyle: 'dashed',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.colors.surface,
+    backgroundColor: '#f8f9fa',
   },
   placeholderText: {
-    color: theme.colors.textSecondary,
+    color: '#5f6368',
     textAlign: 'center',
   },
   captureButton: {
-    backgroundColor: theme.colors.primary,
-    paddingVertical: theme.spacing.md,
-    paddingHorizontal: theme.spacing.xl,
+    backgroundColor: '#4285f4',
+    paddingVertical: 16,
+    paddingHorizontal: 32,
     borderRadius: 24,
-    marginBottom: theme.spacing.md,
+    marginBottom: 16,
   },
   saveButton: {
     backgroundColor: '#34a853',
-    paddingVertical: theme.spacing.md,
-    paddingHorizontal: theme.spacing.xl,
+    paddingVertical: 16,
+    paddingHorizontal: 32,
     borderRadius: 24,
   },
   buttonText: {
     fontSize: 16,
     fontWeight: '500',
-    color: theme.colors.background,
+    color: '#ffffff',
     textAlign: 'center',
   },
 });
